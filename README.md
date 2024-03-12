@@ -1,4 +1,4 @@
-# Omeka-S404 in Docker containers. S404 stands for Omeka S version 4.0.4
+# Omeka-S404 in Docker containers. S404 stands for [Omeka S](https://github.com/omeka/omeka-s)  version 4.0.4
 
 There are options to either use Github Codespaces (the simplest) or launch/build the containers using local Visual Studio Code (VSCode) setup or via command line only.
 
@@ -22,9 +22,16 @@ There are options to either use Github Codespaces (the simplest) or launch/build
 
     ![Open in Browser](image-4.png)
 
-- Fill in the form to setup your Omeka S 4.0.4 instance. What you do beyond this is completely up to you. 
+- Fill in the form to setup your Omeka S 4.0.4 instance. 
 
     ![Omeka S 4.0.4 instance](image-5.png)
+
+-  Note that as part of this setup, there are:
+    - One default theme installed
+    - Two modules installed made up of the [Common](https://gitlab.com/Daniel-KM/Omeka-S-module-Common) module and the [EasyAdmin](https://github.com/Daniel-KM/Omeka-S-module-EasyAdmin) module. The "Common" module needs to be installed first before installing the "EasyAdmin" module.
+    - Go to the "Module" section to install the two modules.
+    - Importance of EAsyAdmin module: This module will allow you to install additional Omeka S [themes](https://omeka.org/s/themes/) and or [modules](https://omeka.org/s/modules/).
+
 
 ## Launch the containers using VSCode
 
