@@ -1,5 +1,31 @@
 # Omeka-S404 in Docker containers. S404 stands for Omeka S version 4.0.4
 
+There are options to either use Github Codespaces (the simplest) or launch/build the containers using local Visual Studio Code (VSCode) setup or via command line only.
+
+## Launch the containers using Github Codespaces
+
+- Fork this repository
+
+    ![Fork github repository](image.png)
+
+- Go to '<> Code' section on your forked repository -> Codespaces -> select 'Create codespace on main'. This will launch a codespace with Visual Studio Code (VSCode) interface if successfully
+    ![Create codespace on main](image-1.png)
+- Install 'Docker' extension. Be alert here as you may get an alert asking you "Do you want to install the recommended 'Docker' extension from Microsoft for docker-composer.yml?" Click the install button to install. For the first time, the installation may take a while so you need patience.
+
+    ![install the recommended 'Docker' extension](image-2.png)
+
+- Right-click "docker-compose.yml" file and select 'Compose up'. For the first time, the building may take a while so you need patience.
+
+    ![select 'Compose up'](image-3.png)
+
+- Hurray! If everything works as expected, you just click 'Open in Browser' button to go to Omeka S 4.0.4 for further details to set it up. 
+
+    ![Open in Browser](image-4.png)
+
+- Fill in the form to setup your Omeka S 4.0.4 instance. What you do beyond this is completely up to you. 
+
+    ![Omeka S 4.0.4 instance](image-5.png)
+
 ## Launch the containers using VSCode
 
 - Install [VSCode](https://code.visualstudio.com/) and [docker extensions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker).
