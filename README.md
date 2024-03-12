@@ -30,7 +30,7 @@ There are options to either use Github Codespaces (the simplest) or launch/build
     - One default theme installed
     - Two modules installed made up of the [Common](https://gitlab.com/Daniel-KM/Omeka-S-module-Common) module and the [EasyAdmin](https://github.com/Daniel-KM/Omeka-S-module-EasyAdmin) module. The "Common" module needs to be installed first before installing the "EasyAdmin" module.
     - Go to the "Module" section to install the two modules.
-    - Importance of EAsyAdmin module: This module will allow you to install additional Omeka S [themes](https://omeka.org/s/themes/) and or [modules](https://omeka.org/s/modules/).
+    - Importance of EasyAdmin module: This module will allow you to install additional Omeka S [themes](https://omeka.org/s/themes/) and or [modules](https://omeka.org/s/modules/).
 
 
 ## Launch the containers using VSCode
