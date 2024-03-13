@@ -8,7 +8,7 @@ This repository contains Docker containers, and additional files, to help you ru
 
     ![Fork github repository](image.png)
 
-- Go to '<> Code' section on your forked repository -> Codespaces -> select 'Create codespace on main'. This will launch a codespace with Visual Studio Code (VSCode) interface if successfully
+- Go to '<> Code' section on your forked repository -> Codespaces -> select 'Create codespace on main'. This will launch a codespace with Visual Studio Code (VSCode) interface if successful
 
     ![Create codespace on main](image-1.png)
 
@@ -17,10 +17,9 @@ This repository contains Docker containers, and additional files, to help you ru
 
         ![install the recommended 'Docker' extension](image-2-1.PNG)
 
-    - Go to "Extensions" section to manyally install 'Docker' extension if you do not see the alert.
+    - Go to "Extensions" section to manually install 'Docker' extension if you do not see the alert.
 
         ![install the recommended 'Docker' extension](image-2-2.PNG)
-
 
 - Right-click "docker-compose.yml" file and select 'Compose up'. For the first time, the building may take a while so you need patience.
 
