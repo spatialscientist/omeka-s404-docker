@@ -31,7 +31,6 @@ RUN apt-get -qq update && apt-get -qq -y --no-install-recommends install \
 
 # Install the PHP extensions we need
 RUN docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/
-#RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-webp-dir=/usr/include/ --with-jpeg-dir=/usr/include/
 RUN docker-php-ext-install -j$(nproc) iconv pdo pdo_mysql mysqli gd xml xmlrpc xmlwriter calendar json
 RUN pecl install mcrypt-1.0.4 && docker-php-ext-enable mcrypt && pecl install imagick && docker-php-ext-enable imagick 
 RUN docker-php-ext-install exif && docker-php-ext-enable exif
@@ -60,8 +59,7 @@ RUN curl -J -L -s -k \
 &&  mv /var/www/Omeka-S-module-Common-3.4.54/ /var/www/html/modules/Common \
 &&  chown -R www-data:www-data /var/www/html/modules
 
-# As an alternative to line 1-4 above. Install properly, Easy Install extension so that you can use that module to install others.
-# the zipped file was manually compiled by selecting some modules of interest. For more modules, the 'EasyInstall' could be used to install them.
+# Install EasyAdmin module so that you can use that module to install other modules/themes.
 RUN curl -J -L -s -k \
     'https://github.com/Daniel-KM/Omeka-S-module-EasyAdmin/releases/download/3.4.16/EasyAdmin-3.4.16.zip' \
     -o /var/www/easyadmin.zip \
